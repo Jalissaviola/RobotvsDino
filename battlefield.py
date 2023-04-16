@@ -36,4 +36,14 @@ class Battlefield:
             
 
     def display_winner(self):
-        pass 
+       
+        while True:
+            if self.dinosaur.health == 0: 
+                print("T-Rex was extinct!")
+                print("Robot Cyberboard for the Win!!!!")
+                break
+                
+            elif self.robot.health== 0:
+                print("Robot Cyberboard was disconnected!")
+                print("T-Rex for the win!")
+                break  
