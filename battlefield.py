@@ -26,12 +26,12 @@ class Battlefield:
         while self.robot.health  > 0 and self.dinosaur.health > 0:
             self.dinosaur.health -= self.robot.active_weapon.attack_power
             print('Robot CyberFlex attacked Godzilla with a cybersword for 15 damages!')
-            print(f'- T-rex has {self.dinosaur.health} health remaining')
+            print(f'- Godzilla has {self.dinosaur.health} health remaining')
             print("\n")
             if self.dinosaur.health >0: 
                     self.robot.health -= self.dinosaur.attack_power  
                     print("Godzilla attacked Robot CyberFlex for 10 damages! ")
-                    print(f'-Robot Cyberboard has {self.robot.health} health remaining')
+                    print(f'-Robot CyberFlex has {self.robot.health} health remaining')
                     print("\n")
 
             
@@ -41,12 +41,12 @@ class Battlefield:
         while True:
             if self.dinosaur.health == 0: 
                 print("Godzilla was extinct!")
-                print("Robot Cyberboard for the Win!!!!")
+                print("Robot CyberFlex for the Win!!!!")
                 print('\n')
                 break
                 
             elif self.robot.health== 0:
-                print("Robot Cyberboard was disconnected!")
+                print("Robot CyberFLex was disconnected!")
                 print("Godzilla for the win!")
                 print("\n")
                 break  
