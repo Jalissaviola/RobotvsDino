@@ -12,7 +12,7 @@ class Dinosaur:
      #  by the value of the Dinosaur’s attack_power. 
      
     def attack_robot(self,robot_obj): 
-        robot_obj.health -= self.attack 
+        robot_obj.health -= self.attack_power 
         
         
 

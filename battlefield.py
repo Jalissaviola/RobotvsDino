@@ -12,12 +12,13 @@ class Battlefield:
         self.robot.attack_dinosaur(self.robot)
         self.dinosaur.attack_robot(self.dinosaur)
         Battlefield.battle_phase(self)
+        Battlefield.display_winner(self)
 
 
     def display_weclcome(self):
         print("\n")
-        print("WELCOME TO A GAME OF ROBOT VS. DINOSAUR!")
-        print("May the Best Player WIN !!!")
+        print("\nWELCOME TO A GAME OF ROBOT VS. DINOSAUR!")
+        print("\tMay the Best Player WIN !!!")
         print("\n")
 
     def battle_phase(self):
@@ -39,11 +40,13 @@ class Battlefield:
        
         while True:
             if self.dinosaur.health == 0: 
-                print("T-Rex was extinct!")
+                print("Godzilla was extinct!")
                 print("Robot Cyberboard for the Win!!!!")
+                print('\n')
                 break
                 
             elif self.robot.health== 0:
                 print("Robot Cyberboard was disconnected!")
-                print("T-Rex for the win!")
+                print("Godzilla for the win!")
+                print("\n")
                 break  
